@@ -1,0 +1,95 @@
+/* Style the container and center the content */
+body {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Style the calculator box */
+  #calculator {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid for operation buttons */
+    gap: 10px;
+    padding: 20px;
+    background-color: #0078d4; /* Blue background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  /* Style the h2 heading */
+  h2 {
+    grid-column: span 2; /* Spans 2 columns to center the text */
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Style the input fields */
+  input {
+    grid-column: span 2; /* Spans 2 columns to cover the entire width */
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #333; /* Dark gray background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Style the result span */
+  #result {
+    grid-column: span 2;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+  }
+  
+  #result-tab{
+    font-size: 24px;
+  }
+  /* Style the 2x2 grid for operation buttons */
+  #button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-row-gap: 10px;
+  }
+  
+  /* Style the operation buttons within the grid */
+  #add, #subtract, #multiply, #divide {
+    padding: 10px; /* Adjust the padding */
+    font-size: 16px; /* Adjust the font size */
+    background-color: #0051a1; /* Darker blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+    background-color: #0078d4; /* Lighter blue color on hover */
+  }
+  
+  /* Style the clear button */
+  #clear {
+    background-color: #ff5722; /* Red-Orange color for the clear button */
+    padding: 10px;
+  }
+  
+  #clear:hover {
+    background-color: #d84315; /* Darker red-orange on hover */
+  }
+  
+  /* Ensure overflow is hidden and allow scrolling if needed */
+  #calculator {
+    overflow: hidden;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+  }
+  
